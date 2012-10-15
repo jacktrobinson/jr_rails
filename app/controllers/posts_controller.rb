@@ -25,7 +25,8 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
-
+    @users = User.all
+    
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @post }
@@ -35,6 +36,7 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+    @users = User.all
   end
 
   # POST /posts

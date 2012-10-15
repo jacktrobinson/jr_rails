@@ -28,9 +28,12 @@
   </head>
   <body>
   	
-<h1>List of Posts</h1>
+<h1>Blog Posts</h1>
+<br/>
+<p>Post to the blog by clicking on the link below!</p>
+<br/>
 
-<table>
+<table class ="table table-bordered">
   <tr>
     <th>Name </th>
     <th>Title </th>
@@ -53,5 +56,8 @@
 </table>
 <br />
 <%= link_to 'New Post', new_post_path %>
+<br/>
+<br/>
+<%= link_to 'Other Resource: Potential Users', users_path %>
 
 </body>
