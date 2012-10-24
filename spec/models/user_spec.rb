@@ -2,10 +2,10 @@ require 'spec_helper'
 
 describe User do
   
-  it "requires a name" do
-    subject1.should_not be_valid
-    subject1.name = Insert_Name
-    subject1.should be_valid
+  it "requires an email address" do
+    subject.should_not be_valid
+    subject.email = "Name@jack.me"
+    subject.should be_valid
   end
 
 

@@ -4,10 +4,10 @@ describe "Posts" do
   
   describe "GET /posts" do
 
-    it "requires a title", js: true do
+    it "requires a title" do
       visit posts_path
       click_link "New Post"
-      fill_in "content", with: "Bugs are cool."
+      fill_in "Content", with: "Bugs are cool."
       click_on "Create Post"
       
       error_message = "Title can't be blank"
