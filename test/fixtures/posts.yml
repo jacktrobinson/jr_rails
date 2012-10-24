@@ -9,3 +9,7 @@ two:
   name: MyString
   title: MyString
   content: MyText
+
+jack:
+  name: Jack
+  email: jack.tyler.robinson@gmail.com

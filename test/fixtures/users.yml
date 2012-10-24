@@ -9,3 +9,8 @@ two:
   name: MyString
   email: MyString
   occupation: MyString
+
+jack:
+  name: Jack
+  email: jack.tyler.robinson@gmail.com
+  occupation: Student
