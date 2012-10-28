@@ -4,6 +4,12 @@ describe "Posts" do
   
   describe "GET /posts" do
 
+    before do
+      sign_in
+      visit posts_path
+      click_link "New Post"
+    end
+    
     it "requires a title" do
       visit posts_path
       click_link "New Post"

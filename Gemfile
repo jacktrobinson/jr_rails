@@ -11,10 +11,13 @@ group :development, :test do
   gem 'debugger'
   gem 'capybara'
 end
+
 group :production do
   gem 'pg'
 end
 
+gem 'devise'
+gem 'rails_admin', github: 'sferik/rails_admin'
 
 # Gems used only for assets and not required
 # in production environments by default.
