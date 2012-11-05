@@ -1,8 +1,22 @@
 class PostsController < ApplicationController
+  
+  #CHANGED - 11.3
+  before_filter :authenticate_user!
+  
+  #CHANGED - 11.3
+  before_filter do
+    @users = User.all
+  end
+  
+  
+#  def posts
+#    current_user.posts
+#  end
+  
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.all
+    @posts = Post.by_name
 
     respond_to do |format|
       format.html # index.html.erb
@@ -24,6 +38,8 @@ class PostsController < ApplicationController
   # GET /posts/new
   # GET /posts/new.json
   def new
+    #@post = posts.build
+    # CHANGED - 11.3 
     @post = Post.new
     @users = User.all
     
@@ -35,6 +51,8 @@ class PostsController < ApplicationController
 
   # GET /posts/1/edit
   def edit
+    #@post = posts.find(params[:id])
+    #CHANGED - 11.3
     @post = Post.find(params[:id])
     @users = User.all
   end
@@ -58,6 +76,8 @@ class PostsController < ApplicationController
   # PUT /posts/1
   # PUT /posts/1.json
   def update
+    #@post = posts.find(params[:id])
+    #CHANGED - 11.3
     @post = Post.find(params[:id])
 
     respond_to do |format|
@@ -74,6 +94,8 @@ class PostsController < ApplicationController
   # DELETE /posts/1
   # DELETE /posts/1.json
   def destroy
+    #@post = posts.find(params[:id])
+    #CHANGED
     @post = Post.find(params[:id])
     @post.destroy
 
