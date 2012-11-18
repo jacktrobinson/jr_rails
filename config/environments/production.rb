@@ -1,6 +1,8 @@
 JrRails::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
+  config.assets.compile = true
+
   # Code is not reloaded between requests
   config.cache_classes = true
 
@@ -67,6 +69,6 @@ JrRails::Application.configure do
   
    config.action_mailer.default_url_options = { :host => 'jr-rails.herokuapp.com' }
 
-  config.assets.compile = true
+ 
 
 end
