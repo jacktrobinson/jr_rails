@@ -67,4 +67,6 @@ JrRails::Application.configure do
   
    config.action_mailer.default_url_options = { :host => 'jr-rails.herokuapp.com' }
 
+  config.assets.compile = true
+
 end

@@ -13,3 +13,16 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+$(document).ready(function(){
+	var $display = $("#display");
+	$("#help").hide();
+	$display.toggle(function(){
+	 	$("#help").show("slide");
+	},function(){	
+		$("#help").hide("slow");
+	
+	});
+	});
+
+
