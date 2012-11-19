@@ -63,7 +63,7 @@ module JrRails
     config.action_mailer.default_url_options = { :host => 'localhost:3000' }
     
 
-    config.assets.initialize_on_precompile = true
+
 
     #INSERTED
     config.generators do |g|
