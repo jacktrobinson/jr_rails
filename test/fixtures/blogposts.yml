@@ -1,9 +1,0 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  issue_title: MyString
-  issue_text: MyString
-
-two:
-  issue_title: MyString
-  issue_text: MyString
