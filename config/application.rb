@@ -64,7 +64,7 @@ module JrRails
 
 
     config.assets.compile = true
-    config.assets.initialize_on_precompile    
+    config.assets.initialize_on_precompile = false
 
 
 
